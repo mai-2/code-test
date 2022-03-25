@@ -1,0 +1,29 @@
+@import "./function/**";
+@import "./setting/**";
+@import "./base/**";
+@import "./mixin/**";
+@import "./plugin/**";
+@import "./module/**";
+@import "./page/**";
+
+body {
+  font-size: rem(16);
+}
+
+.main {
+  padding-top: rem(70);
+}
+
+.section {
+  padding: 0 rem(17);
+
+  @include mq('md') {
+    max-width: rem(1000);
+    margin: 0 auto;
+    box-sizing: content-box;
+  }
+}
+
+* {
+  // outline: 2px solid blue;
+}

@@ -1,0 +1,8 @@
+.section-title {
+    font-size: rem(26);
+    text-align: center;
+
+    @include mq('md') {
+        font-size: 37px;
+    }
+}

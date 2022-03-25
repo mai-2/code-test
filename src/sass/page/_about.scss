@@ -1,0 +1,34 @@
+.about {
+    background: $color-base;
+    padding: rem(72) rem(17);
+
+    @include mq('md') {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: rem(70) rem(17);
+        box-sizing: content-box;
+    }
+}
+
+.about__text {
+    white-space: nowrap;
+    font-size: rem(16);
+
+    @include mq('md') {
+        max-width: rem(690);
+        margin-left: rem(93);
+        padding-right: rem(10);
+        white-space: normal;
+        font-size: rem(38);
+        line-height: 1;
+    }
+}
+
+.about__img {
+    margin-top: rem(10);
+
+    @include mq('md') {
+        margin-left: rem(-70);
+    }
+}

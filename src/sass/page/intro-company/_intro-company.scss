@@ -1,0 +1,14 @@
+.intro-company {
+    padding-left: rem(5);
+}
+
+.intro-company__title {
+    margin-top: rem(65);
+}
+
+.intro-company__items {
+    margin-top: rem(40);
+    display: flex;
+    overflow-x: auto;
+    // white-space: nowrap;
+}

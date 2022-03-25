@@ -1,0 +1,78 @@
+.faq__title {
+    margin-top: rem(154);
+}
+
+.faq__items {
+    margin: rem(35) 0 rem(80);
+
+    @include mq('md') {
+        max-width: rem(759);
+        margin: rem(35) auto rem(97);
+    }
+}
+
+.faq__item {
+    &+& {
+        margin-top: rem(48);
+
+        @include mq('md') {
+            margin-top: rem(58);
+        }
+    }
+}
+
+.faq__q {
+    color: $color-main;
+    font-weight: bold;
+    padding: rem(17) rem(17) rem(10);
+    border: rem(1) solid $color-main;
+    border-radius: rem(14);
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: 'Q';
+        display: inline-block;
+        top: 0;
+        left: 0;
+        margin-right: rem(23);
+        font-size: rem(18);
+    }
+
+    @include mq('md') {
+        padding: rem(18);
+    }
+}
+
+.faq__arrow {
+    display: inline-block;
+    width: rem(8);
+    height: rem(8);
+    right: rem(17);
+    border-top: rem(1) solid #000;
+    border-right: rem(1) solid #000;
+    transform: rotate(135deg);
+}
+
+.faq__a {
+    padding: rem(18) rem(18) 0;
+
+    @include mq('md') {
+        padding: rem(23) rem(18) 0;
+    }
+}
+
+.faq__content {
+    display: flex;
+    line-height: 1.3;
+
+    &::before {
+        display: inline-block;
+        content: 'A';
+        color: $color-accent;
+        font-weight: bold;
+        font-size: rem(18);
+        margin-right: rem(25);
+    }
+}
+

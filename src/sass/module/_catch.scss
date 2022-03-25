@@ -1,0 +1,33 @@
+.catch {
+    background: $color-main;
+    padding: rem(65) rem(18) rem(68);
+}
+
+.catch__title {
+    color: #fff;
+    text-align: center;
+
+    @include mq('md') {
+        font-size: rem(32);
+    }
+}
+
+.catch__buttons {
+    margin-top: rem(32);
+    text-align: center;
+
+    @include mq('md') {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.catch__button {
+    &+& {
+        margin-top: rem(22);
+
+        @include mq('md') {
+            margin: 0 0 0 rem(33);
+        }
+    }
+}

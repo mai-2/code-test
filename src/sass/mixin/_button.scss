@@ -1,0 +1,48 @@
+.button {
+    display: inline-block;
+    width: rem(337);
+    max-width: 100%;
+    background: $color-main;
+    color: #fff;
+    text-align: center;
+    font-size: rem(16);
+    border-radius: rem(30);
+    padding: rem(20) 0;
+    white-space: nowrap;
+
+    @include mq('md') {
+        width: rem(350);
+    }
+
+    &--header {
+        color: #fff;
+        text-align: center;
+        width: rem(110);
+        border-radius: rem(22);
+        padding: rem(10) 0;
+    }
+
+    &--register {
+        background: $color-accent;
+    }
+
+    &--download {
+        background: #fff;
+        color: $color-main;
+    }
+
+    &--list {
+        max-width: rem(277);
+        width: 100%;
+        background: #E8E8E8;
+        color: #000;
+    }
+}
+
+.button1 {
+    background: $color-main;
+}
+
+.button2 {
+    background: $color-accent;
+}

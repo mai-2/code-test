@@ -1,0 +1,62 @@
+.card {
+    width: rem(337);
+
+    &+& {
+        margin-left: rem(7);
+    }
+
+    @include mq('md') {
+        width: rem(260);
+
+        &+& {
+            margin-left: rem(35);
+        }
+    }
+}
+
+.card__head {
+    position: relative;
+
+    img {
+        border-radius: rem(15);
+    }
+}
+
+.card__label {
+    position: absolute;
+    left: rem(18);
+    bottom: rem(-10);
+
+    span {
+        display: inline-block;
+        background: #fff;
+        border: rem(1) solid $color-main;
+        padding: rem(2) rem(17);
+        font-size: rem(14);
+    }
+}
+
+.card__body {
+    padding: rem(32) rem(30) rem(33) rem(21);
+    width: rem(337);
+
+    @include mq('md') {
+        width: rem(236);
+        padding: rem(19) 0 0 rem(16);
+    }
+}
+
+.card__name {
+    font-size: rem(14);
+}
+
+.card__text {
+    margin-top: rem(17);
+    font-weight: bold;
+    font-size: rem(20);
+
+    @include mq('md') {
+        margin-top: rem(10);
+        line-height: 1.2;
+    }
+}

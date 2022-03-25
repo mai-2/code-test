@@ -1,0 +1,65 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: rem(70);
+    top: 0;
+    left: 0;
+}
+
+.header__inner {
+    height: inherit;
+    padding: 0 rem(25);
+    display: flex;
+    align-items: center;
+    max-width: rem(1000);
+    margin: 0 auto;
+    box-sizing: content-box;
+    justify-content: space-between;
+
+    @include mq('md') {
+        padding: 0;
+    }
+}
+
+.header__logo {
+    width: rem(145);
+}
+
+.header__nav {
+    display: none;
+
+    @include mq('md') {
+        display: block;
+        white-space: nowrap;
+    }
+}
+
+.header__items {
+    display: flex;
+    align-items: center;
+    // margin-left: rem(190);
+    // margin-left: auto;
+}
+
+.header__link {
+    font-size: rem(16);
+    padding: rem(25) rem(10);
+    display: grid;
+}
+
+.header__buttons {
+    display: none;
+
+    @include mq('md') {
+        display: flex;
+        // margin-left: auto;
+    }
+}
+
+.header__button {
+    display: grid;
+
+    &+& {
+        margin-left: rem(20);
+    }
+}
